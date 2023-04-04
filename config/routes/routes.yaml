@@ -1,0 +1,3 @@
+#pages_view:
+#  path: pages/view
+#  controller: App\Controller\PageController::view

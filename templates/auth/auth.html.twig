@@ -1,0 +1,21 @@
+{% extends('layouts/main.html.twig') %}
+
+{% block content %}
+    <div class="card my-3" style="width: 300px; margin: 0 auto">
+        <div class="card-body">
+            <form method="post" action="{{ path('auth') }}" v-on:submit="auth">
+                <div class="md-3">
+                    <label for="login" class="form-label">Login</label>
+                    <input id="login" class="form-control">
+                </div>
+                <div class="md-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" class="form-control">
+                </div>
+                <div class="md-3 pt-3">
+                    <button id="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
